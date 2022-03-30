@@ -4,7 +4,7 @@ Test de commande du module de 8 relais à Semi-conducteurs, depuis la Raspberry 
 
 ## Module 8 Solid State Relay
 
-<a><center><img src="SolidStateRelay/8SolidStateRelay_1.jpg" width="450"></center></a>
+<a><img src="SolidStateRelay/8SolidStateRelay_1.jpg" width="450"></a>
 
 - SSR Output (each channel):
     - Load voltage range: 75 to 264VAC (50/60Hz).
@@ -32,4 +32,17 @@ Test de commande du module de 8 relais à Semi-conducteurs, depuis la Raspberry 
 
 ## Module PCA9685
 
-<a><center><img src="PCA9685/PCA9685_16-channel-pwm-controller.jpg" width="450"></center></a>
+<a><img src="PCA9685/PCA9685_16-channel-pwm-controller.jpg" width="450"></a>
+
+Le module PCA9685 est un contrôleur 16 canaux qui permet de piloter 16 sorties PWM via la communication I2C.
+Il permet entre autre de libérer des entrées sorties du microcontrôleur (Arduino, Esp8266, ... ) ou de la Raspberry PI.
+Il permetde piloter jusqu’à 16 LED, ou servomoteurs, ou relais
+
+### Exemple de raccordement (avec 8 LEDs)
+
+| RPI Pin out</br><a href="RPI/GPIO-Pinout-Diagram-2.png"><img src="RPI/GPIO-Pinout-Diagram-2.png" width="250"></a> |<a href="Schema/RPI_PCA9685_8LED.png"><img src="Schema/RPI_PCA9685_8LED.png" width="450"></a> |
+|-----|-----|
+
+#### Test I2C
+
+#### Test en Python
