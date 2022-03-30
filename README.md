@@ -4,7 +4,7 @@ Test de commande du module de 8 relais à Semi-conducteurs, depuis la Raspberry 
 
 ## Module 8 Solid State Relay
 
-![8 Solid State Relay](SolidStateRelay/8SolidStateRelay_1.jpg)
+<a><center><img src="SolidStateRelay/8SolidStateRelay_1.jpg" width="450"></center></a>
 
 - SSR Output (each channel):
     - Load voltage range: 75 to 264VAC (50/60Hz).
@@ -27,3 +27,9 @@ Test de commande du module de 8 relais à Semi-conducteurs, depuis la Raspberry 
 
 | <a><img src="SolidStateRelay/g3mb-202p.png" width="450"></a>|<a><img src="SolidStateRelay/g3mb-202p_2.png" width="150"></a>|
 |-----|-----|
+
+---
+
+## Module PCA9685
+
+<a><center><img src="PCA9685/PCA9685_16-channel-pwm-controller.jpg" width="450"></center></a>
