@@ -83,7 +83,4 @@ while True :
         sleep(0.1)
         LED.set_pwm(a,0,0)
 ```
-
-<video width="320" height="240" controls loop>
-  <source src="Video/IMG_3882.mov" type="video/mp4">
-</video>
+![python test result ](Video/IMG_3882.gif)
