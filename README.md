@@ -89,8 +89,3 @@ while True :
 ## Test Complet : PCA9685 + 8 Solid State Relay
 
 ![RPI_PCA9685_8LED_8RELAY.png](Schema/RPI_PCA9685_8LED_8RELAY.png)
-
-<video controls autoplay>
-  <source src="Video/IMG_3883.mov" type="video/mov">
-  Your browser does not support the video tag.
-</video>
