@@ -38,11 +38,52 @@ Le module PCA9685 est un contrôleur 16 canaux qui permet de piloter 16 sorties 
 Il permet entre autre de libérer des entrées sorties du microcontrôleur (Arduino, Esp8266, ... ) ou de la Raspberry PI.
 Il permetde piloter jusqu’à 16 LED, ou servomoteurs, ou relais
 
+*Doc technique :*
+
+- https://www.adafruit.com/product/815
+- https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
+- https://learn.adafruit.com/16-channel-pwm-servo-driver/chaining-drivers
+
 ### Exemple de raccordement (avec 8 LEDs)
 
 | RPI Pin out</br><a href="RPI/GPIO-Pinout-Diagram-2.png"><img src="RPI/GPIO-Pinout-Diagram-2.png" width="250"></a> |<a href="Schema/RPI_PCA9685_8LED.png"><img src="Schema/RPI_PCA9685_8LED.png" width="450"></a> |
 |-----|-----|
 
 #### Test I2C
+Le module PCA9685 est visible à l'adresse I2C 0x40 :
+```
+pi@RPI: $ i2cdetect -y 1
+     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
+40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+70: 70 -- -- -- -- -- -- --   
+```
 
-#### Test en Python
+#### Rapide test en Python
+
+*Installation de la lib :* ```$ pip3 install Adafruit_PCA9685 ```
+
+*Script :*
+```
+#!/usr/bin/python3
+
+import Adafruit_PCA9685
+from time import sleep
+
+LED=Adafruit_PCA9685.PCA9685()
+
+while True :
+    for a in range(8):
+        LED.set_pwm(a,0,4095)
+        sleep(0.1)
+        LED.set_pwm(a,0,0)
+```
+
+<video width="320" height="240" controls loop>
+  <source src="Video/IMG_3882.mov" type="video/mp4">
+</video>
