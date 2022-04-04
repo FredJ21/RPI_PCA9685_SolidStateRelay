@@ -84,3 +84,8 @@ while True :
         LED.set_pwm(a,0,0)
 ```
 ![python test result ](Video/IMG_3882.gif)
+
+---
+## Test Complet : PCA9685 + 8 Solid State Relay
+
+![RPI_PCA9685_8LED_8RELAY.png](Schema/RPI_PCA9685_8LED_8RELAY.png)
