@@ -23,6 +23,20 @@ Test de commande du module de 8 relais à Semi-conducteurs, depuis la Raspberry 
     - Rated output load: 2A at 100 to 240VAC.(50/60Hz).
     - Load type: General purpose.
 
+#### Atttention !!!
+
+les modules "Solid State Relay" sont proposés sous 2 variants : en logique de commande "haute" ou en logique de commande "basse" :
+
+- Module à logique haute :
+  - 0-2.5V en entrée  --> relais activé
+  - 3.3-5V en entrée  --> relais désactivé
+- Module à logique basse :
+  - 0-2.5V en entrée  --> relais désactivé
+  - 3.3-5V en entrée  --> relais activé
+
+(voir description : https://fr.aliexpress.com/item/1005001621690700.html)
+
+
 #### Le module est donc composé de 8 relais type "Solid State" modèle G3MB-202P
 
 | <a><img src="SolidStateRelay/g3mb-202p.png" width="450"></a>|<a><img src="SolidStateRelay/g3mb-202p_2.png" width="150"></a>|
@@ -38,7 +52,7 @@ Le module PCA9685 est un contrôleur 16 canaux qui permet de piloter 16 sorties 
 Il permet entre autre de libérer des entrées sorties du microcontrôleur (Arduino, Esp8266, ... ) ou de la Raspberry PI.
 Il permetde piloter jusqu’à 16 LED, ou servomoteurs, ou relais
 
-*Doc technique :*
+*Docs techniques :*
 
 - https://www.adafruit.com/product/815
 - https://learn.adafruit.com/16-channel-pwm-servo-driver/downloads
@@ -95,7 +109,7 @@ while True :
 ![python test result ](Video/IMG_3882.gif)
 
 ---
-## Test Final 
+## Test Final
 
 <a href="https://youtu.be/gvNSiVwKJAc">
 <img src="Video/IMG_3883.png"  height="500">
