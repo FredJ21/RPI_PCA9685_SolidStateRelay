@@ -50,25 +50,34 @@ Il permetde piloter jusqu’à 16 LED, ou servomoteurs, ou relais
 |-----|-----|
 
 #### Test I2C
+
+*Prerequis :*
+```
+    sudo apt-get install -y python-smbus
+    sudo apt-get install -y i2c-tools
+```
+
 Le module PCA9685 est visible à l'adresse I2C 0x40 :
 ```
-pi@RPI: $ i2cdetect -y 1
-     0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
-00:          -- -- -- -- -- -- -- -- -- -- -- -- --
-10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
-40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
-70: 70 -- -- -- -- -- -- --   
+    pi@RPI: $ i2cdetect -y 1
+         0  1  2  3  4  5  6  7  8  9  a  b  c  d  e  f
+    00:          -- -- -- -- -- -- -- -- -- -- -- -- --
+    10: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    20: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    30: -- -- -- -- -- -- -- -- -- -- -- -- 3c -- -- --
+    40: 40 -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    50: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    60: -- -- -- -- -- -- -- -- -- -- -- -- -- -- -- --
+    70: 70 -- -- -- -- -- -- --   
 ```
 
 #### Rapide test en Python
 
-*Installation de la lib :* ```$ pip3 install Adafruit_PCA9685 ```
+*Installation de la lib :*
 
-*Script :*
+ ```$ pip3 install Adafruit_PCA9685 ```
+
+*programme simple:*
 ```
 #!/usr/bin/python3
 
@@ -89,3 +98,12 @@ while True :
 ## Test Complet : PCA9685 + 8 Solid State Relay
 
 ![RPI_PCA9685_8LED_8RELAY.png](Schema/RPI_PCA9685_8LED_8RELAY.png)
+
+<object width="425" height="350">
+  <param name="movie" value="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg" />
+  <param name="wmode" value="transparent" />
+  <embed src="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg"
+         type="application/x-shockwave-flash"
+         wmode="transparent" width="425" height="350" />
+</object>
+ok
