@@ -95,15 +95,9 @@ while True :
 ![python test result ](Video/IMG_3882.gif)
 
 ---
-## Test Complet : PCA9685 + 8 Solid State Relay
+## Test Final 
 
-![RPI_PCA9685_8LED_8RELAY.png](Schema/RPI_PCA9685_8LED_8RELAY.png)
-
-<object width="425" height="350">
-  <param name="movie" value="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg" />
-  <param name="wmode" value="transparent" />
-  <embed src="http://www.youtube.com/user/wwwLoveWatercom?v=BTRN1YETpyg"
-         type="application/x-shockwave-flash"
-         wmode="transparent" width="425" height="350" />
-</object>
-ok
+<a href="https://youtu.be/gvNSiVwKJAc">
+<img src="Video/IMG_3883.png"  height="500">
+</a>
+https://youtu.be/gvNSiVwKJAc
